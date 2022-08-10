@@ -639,6 +639,13 @@ function SaveSnapshot()
     downloadLink.click();
 }
 
+function SaveSnapshotNew()
+{    
+    downloadLink.download="snapshotNew.png";
+    downloadLink.href=c.toDataURL("image/jpg").replace("image/jpg", "image/octet-stream");
+    downloadLink.click();
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 // frame rate counter
 /////////////////////////////////////////////////////////////////////////////////////
